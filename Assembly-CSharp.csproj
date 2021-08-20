@@ -92,12 +92,15 @@
     <Compile Include="Assets/GooglePlayGames/BasicApi/SavedGame/ISavedGameClient.cs" />
     <Compile Include="Assets/GooglePlayGames/ISocialPlatform/PlayGamesLeaderboard.cs" />
     <Compile Include="Assets/Scripts/UI/FollowCamera.cs" />
+    <Compile Include="Assets/Game/attack1.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Nearby/NearbyConnectionConfiguration.cs" />
     <Compile Include="Assets/Scripts/BackEndServer/BackEndMatchManager.cs" />
     <Compile Include="Assets/GooglePlayGames/Platforms/NearbyConnectionClientFactory.cs" />
     <Compile Include="Assets/Scripts/UI/MatchLobby/FriendTabUI.cs" />
     <Compile Include="Assets/Scripts/Player/Bullet.cs" />
     <Compile Include="Assets/GooglePlayGames/Platforms/Android/AndroidClient.cs" />
+    <Compile Include="Assets/Game/bullet1.cs" />
+    <Compile Include="Assets/Game/player1.cs" />
     <Compile Include="Assets/Scripts/UI/LoadRoom/LoadRoomUI.cs" />
     <Compile Include="Assets/ExAssets/48 Particle Effect Pack/ShurikenEffectEditor/csShurikenEffectEditor.cs" />
     <Compile Include="Assets/Scripts/Dispatcher/Dispatcher.cs" />
@@ -146,6 +149,7 @@
     <Compile Include="Assets/Scripts/World/BulletManager.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Multiplayer/Participant.cs" />
     <Compile Include="Assets/Scripts/BackEndServer/BackEndInGame.cs" />
+    <Compile Include="Assets/Game/enemy.cs" />
     <Compile Include="Assets/Scripts/System/InputManager.cs" />
     <Compile Include="Assets/Scripts/UI/MatchLobby/TabUI.cs" />
     <Compile Include="Assets/Scripts/Player/Player.cs" />
@@ -156,12 +160,10 @@
     <Compile Include="Assets/GooglePlayGames/Platforms/Android/AndroidTurnBasedMultiplayerClient.cs" />
     <Compile Include="Assets/Scripts/UI/MatchLobby/LobbyUI.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Nearby/EndpointDetails.cs" />
+    <Compile Include="Assets/Game/touchpad.cs" />
     <Compile Include="Assets/ExAssets/48 Particle Effect Pack/ShurikenEffectEditor/csShurikenEffectChanger.cs" />
-    <Compile Include="Assets/Scripts/Game/player1.cs" />
-    <Compile Include="Assets/Scripts/Game/bullet1.cs" />
-    <Compile Include="Assets/Scripts/Game/touchpad.cs" />
-    <Compile Include="Assets/Scripts/Game/attack1.cs" />
-    <Compile Include="Assets/Scripts/Game/enemy.cs" />
+    <Compile Include="Assets/Game/bullet2.cs" />
+    <Compile Include="Assets/Game/bullet3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TheBackend/Plugins/Settings/TheBackendHashKeySettings.dll" />
