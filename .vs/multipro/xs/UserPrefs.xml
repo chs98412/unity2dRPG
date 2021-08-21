@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{50C6604C-8ADF-1289-32A7-8B40DAE91CC2}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game/bullet3.cs">
     <Files>
-      <File FileName="Assets/Game/enemy.cs" Line="67" Column="9" />
-      <File FileName="Assets/Game/attack1.cs" Line="169" Column="48" />
-      <File FileName="Assets/Game/bullet1.cs" Line="7" Column="33" />
-      <File FileName="Assets/Game/player1.cs" Line="35" Column="50" />
-      <File FileName="Assets/Game/bullet2.cs" Line="21" Column="1" />
-      <File FileName="Assets/Game/bullet3.cs" Line="16" Column="9" />
+      <File FileName="Assets/Game/enemy.cs" Line="20" Column="29" />
+      <File FileName="Assets/Game/attack1.cs" Line="190" Column="1" />
+      <File FileName="Assets/Game/bullet1.cs" Line="4" Column="1" />
+      <File FileName="Assets/Game/player1.cs" Line="17" Column="1" />
+      <File FileName="Assets/Game/bullet2.cs" Line="8" Column="1" />
+      <File FileName="Assets/Game/bullet3.cs" Line="60" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

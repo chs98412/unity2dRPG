@@ -360,6 +360,7 @@
 "Assets/Game/bullet2.cs"
 "Assets/Game/bullet3.cs"
 "Assets/Game/enemy.cs"
+"Assets/Game/GridControll.cs"
 "Assets/Game/player1.cs"
 "Assets/Game/touchpad.cs"
 "Assets/GooglePlayGames/BasicApi/Achievement.cs"
@@ -452,6 +453,7 @@
 "Assets/Scripts/World/BulletManager.cs"
 "Assets/Scripts/World/EffectManager.cs"
 "Assets/Scripts/World/WorldManager.cs"
+"Assets/TutorialInfo/Scripts/Readme.cs"
 "Assets/Unity Technologies/SignInWithApple/Scripts/SignInWithApple.cs"
 -langversion:8.0
 

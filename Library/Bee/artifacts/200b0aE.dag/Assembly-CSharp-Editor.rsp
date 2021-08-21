@@ -375,6 +375,7 @@
 "Assets/GooglePlayGames/Editor/GPGSUpgrader.cs"
 "Assets/GooglePlayGames/Editor/GPGSUtil.cs"
 "Assets/GooglePlayGames/Editor/NearbyConnectionUI.cs"
+"Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs"
 -langversion:8.0
 
 /deterministic

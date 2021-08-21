@@ -11,7 +11,7 @@ public class enemy : MonoBehaviour
     float x;
     float angle;
     float time;
-    public float time_set=3;
+    public float time_set = 3;
     bool atk = false;
     int cnt = 0;
     public Image hpBar;
@@ -26,6 +26,9 @@ public class enemy : MonoBehaviour
     float comaTime = 0;
     public float comaTimeset = 3;
     public bool blackhalltrig = false;
+    public float dmg_basicbullet = 0.01f;
+    public float weight = 0.001f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +41,7 @@ public class enemy : MonoBehaviour
         if (coma)
         {
             comaTime += Time.deltaTime;
-            GetComponent<SpriteRenderer>().color =Color.blue;
+            GetComponent<SpriteRenderer>().color = Color.blue;
             if (comaTime > comaTimeset)
             {
                 coma = false;
@@ -47,52 +50,63 @@ public class enemy : MonoBehaviour
             }
         }
 
-        else if(!blackhalltrig)
+        else if (!blackhalltrig)
         {
-            Vector3 targetPosition = player.transform.position;
-            Vector3 myPosition = transform.position;
+            Vector2 targetPosition = player.transform.position;
+            Vector2 myPosition = transform.position;
 
-
-            transform.position = Vector2.MoveTowards(myPosition, targetPosition, speed3 * Time.deltaTime);
-
-            if (crash)
+            if (Vector2.Distance(targetPosition, myPosition) < 3)
             {
-                time += Time.deltaTime;
-                if (time > time_set)
-                {
-                    time = 0;
-                    x = player.transform.position.x - this.transform.position.x;
-                    y = player.transform.position.y - this.transform.position.y;
+                Debug.Log("아야");
 
-                    angle = Mathf.Atan2(Mathf.Abs(y), Mathf.Abs(x)) * Mathf.Rad2Deg;
-                    //transform.Rotate(0, 0, 0);
-                    //if (x < 0 && y < 0)
-                    //    transform.Rotate(0, 0, angle);
+            }
 
-                    //else if (x > 0 && y < 0)
-                    //    transform.Rotate(0, 0, 180 - angle);
-                    //else if (x < 0 && y > 0)
-                    //    transform.Rotate(0, 0, -angle);
-                    //else if (x > 0 && y > 0)
-                    //    transform.Rotate(0, 0, 180 + angle);
+            else
+            {
+                rigid2D.MovePosition(rigid2D.position + (myPosition - targetPosition) * weight * speed3 * Time.deltaTime);
 
-                    atk = true;
-                }
-                if (atk)
-                {
-                    cnt += 1;
-                    if (cnt < speed)
-                    {
-                        Vector2 vc = new Vector2(x, y);
+                // transform.position = Vector2.MoveTowards(myPosition, targetPosition, speed3 * Time.deltaTime);
+            }
+            {
+                //     if (crash)
+                //     {
+                //         time += Time.deltaTime;
+                //         if (time > time_set)
+                //         {
+                //             time = 0;
+                //             x = player.transform.position.x - this.transform.position.x;
+                //             y = player.transform.position.y - this.transform.position.y;
 
-                        rigid2D.MovePosition(rigid2D.position + vc * (speed3 * 100) * Time.deltaTime);
-                    }
-                    else
-                    {
-                        cnt = 0;
-                        atk = false;
-                    }
-                }
+                //             angle = Mathf.Atan2(Mathf.Abs(y), Mathf.Abs(x)) * Mathf.Rad2Deg;
+                //             transform.Rotate(0, 0, 0);
+                //             if (x < 0 && y < 0)
+                //                 transform.Rotate(0, 0, angle);
+
+                //             else if (x > 0 && y < 0)
+                //                 transform.Rotate(0, 0, 180 - angle);
+                //             else if (x < 0 && y > 0)
+                //                 transform.Rotate(0, 0, -angle);
+                //             else if (x > 0 && y > 0)
+                //                 transform.Rotate(0, 0, 180 + angle);
+
+                //             atk = true;
+                //         }
+                //         if (atk)
+                //         {
+                //             cnt += 1;
+                //             if (cnt < speed)
+                //             {
+                //                 Vector2 vc = new Vector2(x, y);
+
+                //                 rigid2D.MovePosition(rigid2D.position + vc * (speed3 * 100) * Time.deltaTime);
+                //             }
+                //             else
+                //             {
+                //                 cnt = 0;
+                //                 atk = false;
+                //             }
+                //         }
+                //     }
             }
         }
     }
@@ -102,11 +116,16 @@ public class enemy : MonoBehaviour
         {
             coma = true;
         }
-        else
+        else if (collision.tag == "basicbullet")
         {
             Debug.Log("아야");
 
-            hpBar.fillAmount -= 0.05f;
+            hpBar.fillAmount -= dmg_basicbullet;
+        }
+
+        else if (collision.tag == "blackhallbullet")
+        {
+            Debug.Log("아야");
         }
     }
     public void blackhall(Vector3 pos)
@@ -121,7 +140,7 @@ public class enemy : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(myPosition, pos, speed3 * Time.deltaTime);
 
-        
+
 
     }
 }

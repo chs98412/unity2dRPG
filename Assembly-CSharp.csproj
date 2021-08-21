@@ -64,12 +64,14 @@
     <Compile Include="Assets/GooglePlayGames/BasicApi/Events/Event.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Multiplayer/Invitation.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/SavedGame/ISavedGameMetadata.cs" />
+    <Compile Include="Assets/Game/bullet2.cs" />
     <Compile Include="Assets/Scripts/UI/MatchLobby/FriendUI.cs" />
     <Compile Include="Assets/Scripts/BackEndServer/BackEndServerManager.cs" />
     <Compile Include="Assets/GooglePlayGames/ISocialPlatform/PlayGamesAchievement.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Nearby/INearbyConnectionClient.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/CommonStatusCodes.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Achievement.cs" />
+    <Compile Include="Assets/Game/GridControll.cs" />
     <Compile Include="Assets/GooglePlayGames/Platforms/Android/AndroidNearbyConnectionClient.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Video/IVideoClient.cs" />
     <Compile Include="Assets/GooglePlayGames/ISocialPlatform/PlayGamesScore.cs" />
@@ -119,6 +121,7 @@
     <Compile Include="Assets/GooglePlayGames/Platforms/Android/AndroidJavaConverter.cs" />
     <Compile Include="Assets/GooglePlayGames/Platforms/Android/AndroidTaskUtils.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Multiplayer/TurnBasedMatch.cs" />
+    <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/Nearby/DummyNearbyConnectionClient.cs" />
     <Compile Include="Assets/Scripts/UI/InGame/InGameUiManager.cs" />
     <Compile Include="Assets/GooglePlayGames/Platforms/PlayGamesClientFactory.cs" />
@@ -137,6 +140,7 @@
     <Compile Include="Assets/GooglePlayGames/PluginVersion.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/LeaderboardScoreData.cs" />
     <Compile Include="Assets/ExAssets/48 Particle Effect Pack/Script/csDestroyEffect.cs" />
+    <Compile Include="Assets/Game/bullet3.cs" />
     <Compile Include="Assets/GooglePlayGames/BasicApi/PlayerStats.cs" />
     <Compile Include="Assets/GooglePlayGames/Platforms/TokenClient.cs" />
     <Compile Include="Assets/Scripts/BackEndServer/BackEndMatch.cs" />
@@ -162,21 +166,38 @@
     <Compile Include="Assets/GooglePlayGames/BasicApi/Nearby/EndpointDetails.cs" />
     <Compile Include="Assets/Game/touchpad.cs" />
     <Compile Include="Assets/ExAssets/48 Particle Effect Pack/ShurikenEffectEditor/csShurikenEffectChanger.cs" />
-    <Compile Include="Assets/Game/bullet2.cs" />
-    <Compile Include="Assets/Game/bullet3.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/CreatorKitRPG_Third-PartyNotice.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/Fonts &amp; Materials/mr-pixel/VTF MisterPixel/Velvetyne Black Font Licence.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets/TheBackend/Plugins/Settings/TheBackendHashKeySettings.dll" />
     <None Include="Assets/TheBackend/Plugins/Settings/TheBackendSettings.dll" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader" />
     <None Include="Assets/TheBackend/Plugins/Android/TheBackend.iOS.dll" />
+    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets/ExAssets/Fantasy Skybox FREE/Fog and Ambient references.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader" />
     <None Include="Assets/Pinneaple Dev/Documentation/READ ME.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/TheBackend/Plugins/iOS/TheBackend.iOS.dll" />
     <None Include="Assets/TheBackend/Plugins/LitJson.dll" />
+    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/TheBackend/Plugins/Backend.dll" />
     <None Include="Assets/ExAssets/Fantasy Skybox FREE/Readme.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/Scripts/Dispatcher/Dispatcher Documentation.txt" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" />
     <None Include="Assets/GooglePlayGames/Plugins/Android/GooglePlayGamesManifest.plugin/AndroidManifest.xml" />
+    <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

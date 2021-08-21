@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/GooglePlayGames/Editor/GPGSProjectSettings.cs" />
+    <Compile Include="Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" />
     <Compile Include="Assets/GooglePlayGames/Editor/GPGSStrings.cs" />
     <Compile Include="Assets/GooglePlayGames/Editor/GPGSUtil.cs" />
     <Compile Include="Assets/GooglePlayGames/Editor/GPGSAndroidSetupUI.cs" />

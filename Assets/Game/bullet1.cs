@@ -5,7 +5,7 @@ using UnityEngine;
 public class bullet1 : MonoBehaviour
 {
     Vector3 pos = new Vector3();
-    
+    public float speed = 0.06f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,21 +15,18 @@ public class bullet1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pos=transform.position;
+        pos = transform.position;
 
-        transform.Translate(0.03f, 0, 0);
+        transform.Translate(speed, 0, 0);
 
-        if(
-            (pos.x>10||pos.x<-10)||
+        if (
+            (pos.x > 10 || pos.x < -10) ||
             (pos.y > 10 || pos.y < -10)
             )
         {
             Destroy(gameObject);
         }
     }
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("아야");
-    }
+
+
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class bullet2 : MonoBehaviour
 {
     Vector3 pos = new Vector3();
+    public float speed = 0.06f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class bullet2 : MonoBehaviour
     {
         pos = transform.position;
 
-        transform.Translate(0.01f, 0, 0);
+        transform.Translate(speed, 0, 0);
 
         if (
             (pos.x > 10 || pos.x < -10) ||
